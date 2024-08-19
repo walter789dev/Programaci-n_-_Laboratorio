@@ -1,0 +1,128 @@
+body, h1{
+   margin: 0px;
+}
+
+body {
+   background-color: #bdc3c772;
+}
+
+h1{
+   padding: 10px;
+   color: #fff;
+   text-align: center;
+   background-color: #353b48;
+}
+
+section{
+   margin: 10px auto 15px;
+   padding: 10px 20px;
+   max-width: 1200px;
+   border-radius: 10px;
+   box-shadow: 2px 5px 5px 1px #353b481e;
+   background-color: #fff;
+}
+
+h2{
+   padding-bottom: 10px;
+   border-bottom: 2px solid;
+}
+
+.propiedades-texto > p{
+   text-transform: capitalize;
+   text-decoration: underline;
+}
+
+blockquote{
+   padding: 2px 10px;
+   border-left: 5px solid #aab2b7;
+   font-style: italic;
+   background-color: #aab2b72d;
+}
+
+.caja-1, 
+.caja-2{
+   margin: 0px 15px 10px;
+   padding: 5px 15px;
+   border: 2px solid;
+   box-shadow: 5px 5px 15px #aab2b791;
+}
+
+.caja-2{
+   border: 3px solid;
+   background-color: orange;
+}
+
+.relativa{
+   position: relative;
+   padding: 1px 10px;
+   background-color: rgba(0, 255, 255, 0.422);
+}
+
+.absoluta{
+   position: absolute;
+   top: 50px;
+   right: 5%;
+   padding: 0px 10px;
+   color: #fff;
+   background-color: #16a085;
+}
+
+
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 10px;
+}
+
+.grid-item{
+   padding: 15px 20px;
+   border-radius: 10px;
+   text-align: center;
+   color: #fff;
+   background-color: rgb(29, 24, 138);
+}
+
+.animacion{
+   width: 150px;
+   height: 150px;
+   margin-bottom: 20px;
+   background-color: red;
+   transition: background-color .2s ease-in-out, border-radius .2s;
+}
+
+.animacion:hover{
+   background-color: #16a085;
+   border-radius: 60px;
+}
+
+.mover{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color:green;
+   animation: move 2.6s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes move {
+   to{
+      transform: translateX(0px);
+   }
+   from{
+      transform: translateX(700px);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   body{
+      background-color: rgba(128, 0, 128, 0.486);
+   }
+
+   h1{
+      font-size: 25px;
+      padding: 25px 10px;
+   }
+
+   section{
+      margin: 10px 20px;
+   }
+}
