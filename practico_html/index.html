@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Practico - Programación</title>
+  </head>
+  <style>
+    th,
+    td {
+      border: 2px solid;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Encabezado Principal</h1>
+      <nav>
+        <ul>
+          <li><a href="#estructura">Estructura</a></li>
+          <li><a href="#encabezado">Encabezado</a></li>
+          <li><a href="#agrupacion">Agrupación</a></li>
+          <li><a href="#lista">Listas</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#tabla">Tabla</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="estructura">
+        <h2>1. Estructura Básica del Documento HTML</h2>
+        <p>
+          Este documento HTML tiene una estructura basica que incluye la
+          declaración de DOCTYPE, etiquetas de metadatos y un titulo.
+        </p>
+      </section>
+      <section id="encabezado">
+        <h2>2. Encabezados y Propiedades del Texto</h2>
+        <section>
+          <h3>Negrita</h3>
+          <p style="font-weight: 500">Esto es un texto en negrita</p>
+        </section>
+        <section>
+          <h4>Cursiva</h4>
+          <p style="font-style: oblique">Esto es un texto en cursiva</p>
+        </section>
+        <section>
+          <h5>Subrayado</h5>
+          <p style="text-decoration: underline">
+            Esto es un texto en subrayado
+          </p>
+        </section>
+        <section>
+          <h6>Subrayado y Cursiva</h6>
+          <p style="text-decoration: underline; font-weight: 500">
+            Esto es un texto en negrita y subrayado
+          </p>
+        </section>
+      </section>
+      <section id="agrupacion">
+        <h2>3. Divisiones y Agrupación de Contenido</h2>
+        <div>
+          <h3>Sección 1</h3>
+          <p>Contenido de la primera sección agrupada en un div</p>
+        </div>
+        <div>
+          <h3>Sección 2</h3>
+          <p>Contenido de la segunda sección agrupada en un div</p>
+        </div>
+      </section>
+      <section id="lista">
+        <h2>4. Enlaces y Listas</h2>
+        <p>
+          Visita nuestro <a href="https://www.google.com/">sitio web</a> para
+          más información
+        </p>
+        <section>
+          <p>Lista desordenada:</p>
+          <ul>
+            <li>Primer item de una lista desordenada</li>
+            <li>Segundo item de una lista desordenada</li>
+          </ul>
+          <p>Lista ordenada:</p>
+          <ol>
+            <li>Primer item de una lista ordenada</li>
+            <li>Segundo item de una lista ordenada</li>
+          </ol>
+        </section>
+      </section>
+      <section id="multimedia">
+        <h2>5. Elementos Multimedia</h2>
+        <img
+          width="250"
+          src="https://www.dongee.com/tutoriales/content/images/2023/01/image-6.png"
+          alt="Logo Css"
+        />
+        <video src="spiderman.mp4" controls></video>
+        <audio src="spiderman-audio.mp3" controls></audio>
+      </section>
+      <section id="tabla">
+         <h2>6. Tabla</h2>
+        <table style="border: 2px solid">
+          <thead>
+            <tr>
+              <th>Columna 1</th>
+              <th>Columna 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+            </tr>
+            <tr>
+              <td>Dato 3</td>
+              <td>Dato 4</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="formulario">
+         <h2>7. Formulario</h2>
+        <form action="">
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" id="nombre" />
+          <label for="correo">Correo: </label>
+          <input type="email" name="correo" id="correo" />
+          <label for="mensaje">Mensaje: </label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Descripcion de la estructura <br />
+        Información complementaria <br />
+        2024 Trabajo Practico HTML
+      </p>
+    </footer>
+  </body>
+</html>
